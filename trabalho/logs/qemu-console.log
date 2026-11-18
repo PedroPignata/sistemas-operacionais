@@ -1,0 +1,25 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAE00+0EF0AE00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..c[?7l[2J
+Bem-vindo ao IDP Linux!
+
+Boot levou 1.92 segundos!
+
+~ # uname -r
+6.6.137-dirty
+~ # /bin/sysinfo_aluno
+Chamada sysinfo executada com sucesso.
+Tempo desde a inicializacao: 14 segundos
+RAM total: 226897920 bytes
+RAM livre: 212946944 bytes
+Quantidade de processos: 47
+No kernel da atividade, consulte o dmesg para localizar a resposta.
+~ # dmesg | grep -E 'SOLUCAO|AMBIENTE INCORRETO'
+[   13.659875] [+] SOLUCAO: 464F865DDB849984
+~ # poweroff -f
+[   26.148489] reboot: Power down

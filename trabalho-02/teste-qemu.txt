@@ -1,0 +1,24 @@
+Original
+SeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+06FCB050+06F0B050 CA00
+
+
+
+Booting from Floppy...
+Kernel IDP T02
+RESPOSTA: 6141E114FA02FF72
+
+Fragmentos movidos e reordenados
+SeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+06FCB050+06F0B050 CA00
+
+
+
+Booting from Floppy...
+Kernel IDP T02
+RESPOSTA: 6141E114FA02FF72
+

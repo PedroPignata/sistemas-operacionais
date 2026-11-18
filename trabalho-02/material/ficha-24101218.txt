@@ -1,0 +1,19 @@
+Trabalho Prático 02 - Ficha individual
+
+Matrícula: 24101218
+Disco:     disco-24101218.img
+
+Cabeçalho (setor LBA 1 do disco)
+  A tabela começa no byte 370 (0x172) do setor.
+
+  Cada entrada da tabela tem 4 bytes, nesta ordem:
+    byte 0-1: LBA do primeiro setor do pedaço (2 bytes)
+    byte 2  : setor de destino dentro do kernel (1 byte)
+    byte 3  : quantidade de setores do pedaço (1 byte)
+
+Entrega do controle ao kernel
+  Valor de confirmação no registrador: DI
+  Pilha:                               SS = 0x8700, SP = 0x6EB0
+
+Atenção: o bootloader será testado também em outro disco com este mesmo
+formato, mas com o kernel em outras posições.

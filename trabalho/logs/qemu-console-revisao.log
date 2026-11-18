@@ -1,0 +1,41 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAE00+0EF0AE00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM...
+c[?7l[2J
+Bem-vindo ao IDP Linux!
+
+Boot levou 2.43 segundos!
+
+~ # uname -r
+6.6.137-dirty
+~ # busybox | head -n 1
+BusyBox v1.36.1 (2026-11-05 10:55:42 -03) multi-call binary.
+~ # cat /proc/cmdline
+console=ttyS0 loglevel=3
+~ # ls -l /dev/console /dev/null /dev/zero /dev/ptmx /dev/tty /dev/random /dev/u
+random
+crw--w--w-    1 0        5           5,   1 Nov  5 14:17 [1;35m/dev/console[m
+crw-rw-rw-    1 0        0           1,   3 Nov  5 14:16 [1;35m/dev/null[m
+crw-rw-rw-    1 0        5           5,   2 Nov  5 14:16 [1;35m/dev/ptmx[m
+cr--r--r--    1 0        0           1,   8 Nov  5 14:16 [1;35m/dev/random[m
+crw-rw-rw-    1 0        5           5,   0 Nov  5 14:17 [1;35m/dev/tty[m
+cr--r--r--    1 0        0           1,   9 Nov  5 14:16 [1;35m/dev/urandom[m
+crw-rw-rw-    1 0        0           1,   5 Nov  5 14:16 [1;35m/dev/zero[m
+~ # /bin/sysinfo_aluno
+Chamada sysinfo executada com sucesso.
+Tempo desde a inicializacao: 18 segundos
+RAM total: 226897920 bytes
+RAM livre: 212885504 bytes
+Quantidade de processos: 46
+No kernel da atividade, consulte o dmesg para localizar a resposta.
+~ # echo STATUS_SYSINFO=$?
+STATUS_SYSINFO=0
+~ # dmesg | grep -E 'SOLUCAO|AMBIENTE INCORRETO'
+[   17.481947] [+] SOLUCAO: 464F865DDB849984
+~ # poweroff -f
+[   17.605086] reboot: Power down

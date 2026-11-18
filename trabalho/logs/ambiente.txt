@@ -1,0 +1,17 @@
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+GNU ld (GNU Binutils for Ubuntu) 2.42
+QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)
+binutils: 2.42-4ubuntu2.10
+gcc-13: 13.3.0-6ubuntu2~24.04.1
+Package: qemu-system-x86
+Version: 1:8.2.2+ds-0ubuntu1.18
+1a64f6a20aaf6ea4dbba68bbfa8cc1ab7e5c57c4
+258cf62a6dfde3c6a39d120a56a298f2ed6a8901
+aluno-24101218
+61f69171c8d3e6227a3ba63df4aafb902cccc565b0f9a1a3b4bf0889d58537ee  patches/patch-24101218.patch
+CONFIG_BLK_DEV_INITRD=y
+CONFIG_64BIT=y
+CONFIG_DEVTMPFS=y
+CONFIG_DEVTMPFS_MOUNT=y
+CONFIG_STATIC=y
+# CONFIG_TC is not set

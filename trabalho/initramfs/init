@@ -1,0 +1,11 @@
+#!/bin/sh
+mount -t proc none /proc
+mount -t sysfs none /sys
+mknod -m 666 /dev/ttyS0 c 4 64
+
+printf '\nBem-vindo ao IDP Linux!\n\n'
+printf 'Boot levou %s segundos!\n\n' "$(cut -d ' ' -f1 /proc/uptime)"
+setsid cttyhack sh
+
+poweroff -f
+exec /bin/sh

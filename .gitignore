@@ -1,0 +1,5 @@
+*.zip
+__pycache__/
+/trabalho/.tools/
+/trabalho/linux
+/trabalho/busybox

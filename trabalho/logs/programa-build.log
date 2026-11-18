@@ -1,0 +1,1 @@
+gcc  -std=c11 -O2 -Wall -Wextra -Wpedantic -Werror -static -o sysinfo_aluno sysinfo_aluno.c 
